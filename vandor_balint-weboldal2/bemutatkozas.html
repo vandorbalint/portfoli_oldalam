@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <title>Bemutatkozás</title>
+
+    <style>
+        * {
+            font-family: "Quantico", sans-serif !important;
+            letter-spacing: 2px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(#003572, #340088, #003f5c);
+            color: white;
+            padding: 25px;
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        .menu {
+            padding: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+            border-bottom: 3px solid rgba(255, 255, 255, 0.25);
+        }
+
+        .menu a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            padding: 12px 22px;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        .menu a:hover {
+
+            background: rgba(255, 255, 255, 0.20);
+            transform: translateY(-6px);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.15);
+
+        }
+
+        .menu a.active {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 4px 20px rgba(255, 255, 255, 0.15);
+            color: white;
+        }
+
+
+
+        .bemutatkozas {
+            overflow: auto;
+            padding: 15px;
+        }
+
+        .bemutatkozas img {
+            width: 300px;
+            height: 420px;
+            object-fit: cover;
+            float: left;
+            border-radius: 20px 60px;
+            border: 3px solid rgb(196, 196, 255);
+            margin: 10px 30px 20px 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+        }
+
+        hr {
+            height: 3px;
+            border: none;
+            border-radius: 20px;
+            margin: 35px 6px;
+
+            background: linear-gradient(90deg,
+                    transparent,
+                    rgba(255, 255, 255, 0.3),
+                    rgba(255, 255, 255, 0.9),
+                    rgba(196, 196, 255, 0.8),
+                    rgba(255, 255, 255, 0.3),
+                    transparent);
+
+            background-size: 200% 100%;
+            animation: fenycsik 4s linear infinite;
+
+            box-shadow:
+                0 0 10px rgba(255, 255, 255, 0.3),
+                0 0 20px rgba(130, 180, 255, 0.2);
+        }
+
+
+
+        .programok {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .programok div {
+            width: 165px;
+            padding: 20px;
+            text-align: center;
+
+            background: rgba(255, 255, 255, 0.10);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            border-radius: 20px;
+
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.15),
+                inset 0 1px 2px rgba(255, 255, 255, 0.25);
+
+            transition: 0.3s;
+        }
+
+        .programok div:hover {
+            background: rgba(255, 255, 255, 0.20);
+            transform: translateY(-6px);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.15);
+        }
+
+        .programok img {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+            border: none;
+            border-radius: 0;
+            margin: 0 auto;
+        }
+
+        .programok p {
+            font-size: 12px;
+            margin-top: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <article>
+
+        <div class="menu">
+            <a href="index.html">Főoldal</a>
+            <a href="portfolio.html">Portfólióm</a>
+            <a href="bemutatkozas.html" class="active">Bemutatkozás</a>
+            <a href="elerhetoseg.html">Elérhetőség</a>
+        </div>
+
+        <div class="bemutatkozas">
+
+            <img src="img/portre.png" alt="Portré">
+
+            <h1>Üdvözöllek a portfóliómban!</h1>
+
+            <p>
+                Érdekel a digitális alkotás és a különböző
+                kreatív technológiák világa. Szívesen
+                foglalkozom videókészítéssel, képszerkesztéssel,
+                3D modellezéssel és weboldalak készítésével.
+            </p>
+
+            <p>
+                A feladatok során szeretek új megoldásokat
+                kipróbálni, különböző technikákat alkalmazni,
+                és a saját elképzeléseimet megvalósítani.
+                Minden projekt új lehetőséget ad a tanulásra
+                és a fejlődésre.
+            </p>
+
+        </div>
+
+        <hr>
+
+        <h2>Használt programok</h2>
+
+        <p>
+            Munkáim elkészítéséhez több különböző
+            grafikai, videós és 3D-s programot használok.
+        </p>
+
+        <div class="programok">
+
+            <div>
+                <img src="https://img.icons8.com/color/96/blender-3d.png" alt="Blender">
+                <p>Blender</p>
+            </div>
+
+            <div>
+                <img src="https://img.icons8.com/color/96/adobe-after-effects.png" alt="After Effects">
+                <p>After Effects</p>
+            </div>
+
+            <div>
+                <img src="https://img.icons8.com/color/96/adobe-photoshop.png" alt="Photoshop">
+                <p>Photoshop</p>
+            </div>
+
+            <div>
+                <img src="https://img.icons8.com/color/96/adobe-illustrator.png" alt="Illustrator">
+                <p>Illustrator</p>
+            </div>
+
+            <div>
+                <img src="https://img.icons8.com/color/96/adobe-premiere-pro.png" alt="Premiere Pro">
+                <p>Premiere Pro</p>
+            </div>
+
+            <div>
+                <img src="https://www.nchsoftware.com/images/appicons/64/videopad.png" alt="VideoPad">
+                <p>VideoPad</p>
+            </div>
+
+            <div>
+                <img src="https://img.icons8.com/color/96/visual-studio-code-2019.png" alt="VS Code">
+                <p>VS Code</p>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <h2>A portfóliómról</h2>
+
+        <p>
+            A portfólióban az eddig elkészített munkáimat
+            és a különböző programok használata során
+            szerzett tapasztalataimat mutatom be.
+            A projektek között videószerkesztés,
+            tracking, digitális látványtervezés
+            és grafikai munka is megtalálható.
+        </p>
+
+        <hr>
+
+        <h2>Terveim</h2>
+
+        <p>
+            A jövőben szeretném tovább bővíteni az
+            ismereteimet, új technikákat elsajátítani,
+            és egyre összetettebb digitális munkákat
+            készíteni.
+        </p>
+
+    </article>
+
+</body>
+
+</html>

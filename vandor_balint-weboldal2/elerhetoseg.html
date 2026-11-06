@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Elérhetőség</title>
+
+    <style>
+        * {
+            font-family: "Quantico", sans-serif !important;
+            letter-spacing: 2px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(#003572, #340088, #003f5c);
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+            margin: 0;
+            padding: 25px;
+            min-height: 100vh;
+        }
+
+        .menu {
+            border-bottom: 3px solid rgba(255, 255, 255, 0.25);
+            padding: 30px;
+            margin-bottom: 35px;
+            text-align: center;
+        }
+
+        .menu a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            padding: 12px 22px;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        .menu a:hover {
+            background: rgba(255, 255, 255, 0.20);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.15);
+        }
+
+        .menu a.active {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 4px 20px rgba(255, 255, 255, 0.15);
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        .adatok {
+            max-width: 650px;
+            margin: auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.10);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            border-radius: 25px;
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.15),
+                inset 0 1px 2px rgba(255, 255, 255, 0.25);
+        }
+
+        .adatok p {
+            font-size: 16px;
+            margin: 22px 0;
+        }
+
+        .adatok a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .adatok a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            height: 3px;
+            border: none;
+            border-radius: 20px;
+            margin: 30px 6px;
+            background: linear-gradient(90deg,
+                    transparent,
+                    rgba(255, 255, 255, 0.3),
+                    rgba(255, 255, 255, 0.9),
+                    rgba(196, 196, 255, 0.8),
+                    rgba(255, 255, 255, 0.3),
+                    transparent);
+            background-size: 200% 100%;
+            animation: fenycsik 4s linear infinite;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+
+    <article>
+
+        <div class="menu">
+            <a href="index.html">Főoldal</a>
+            <a href="portfolio.html">Portfólióm</a>
+            <a href="bemutatkozas.html">Bemutatkozás</a>
+            <a href="elerhetoseg.html" class="active">Elérhetőség</a>
+        </div>
+
+        <h1>Elérhetőségek</h1>
+
+        <div class="adatok">
+
+            <p>Név: Vándor Bálint Kristóf</p>
+
+            <hr>
+
+            <p>E-mail: vandorbalint@gmail.com</p>
+        </div>
+
+    </article>
+
+</body>
+
+</html>
